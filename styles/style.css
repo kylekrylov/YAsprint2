@@ -1,0 +1,388 @@
+.page {
+   min-width: 1100px;
+   max-width: 1600px;
+   margin: 0 auto;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+section {
+   overflow: hidden;
+}
+
+*::selection {
+   color: #2F80ED;
+   background: #F2F2F2;
+}
+
+.link {
+   color: #2F80ED;
+   text-decoration: none;
+   margin: 0;
+   transition: all 0.5s ease 0s;
+}
+
+.link:hover {
+   color: hsl(214, 100%, 50%);
+}
+
+.title {
+   text-align: center;
+   margin: 0;
+}
+
+.subtitle {
+   text-align: center;
+}
+
+.header {
+   height: 100vh;
+   min-height: 600px;
+   max-height: 756px;
+   display: flex;
+   position: relative;
+   background: #F2F2F2;
+   margin: 0px 0px 0px 0px;
+   overflow: hidden;
+}
+
+.header__logo_place {
+   position: absolute;
+   top: 30px;
+   left: 64px;
+   width: 183px;
+   z-index: 10;
+}
+
+.header__title {
+   align-self: center;
+   text-align: left;
+   width: 648px;
+   margin: 0px 0px 0px 64px;
+   font-size: 102px;
+   line-height: 96px;
+   max-width: 730px;
+   z-index: 2;
+}
+
+.header__subtitle {
+   position: absolute;
+   left: 64px;
+   bottom: 30px;
+   max-width: 338px;
+   font-size: 18px;
+   line-height: 25px;
+   z-index: 2;
+}
+
+.header__main-illustration {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   max-width: 808px;
+}
+
+.header__square-pic {
+   height: 568px;
+   width: 568px;
+   background: #2f80ed;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   transform: rotate(-15deg);
+   animation: spin 20s infinite linear;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.description {
+   margin: 100px auto 0;
+}
+
+.two-columns {
+   display: flex;
+   justify-content: space-between;
+   max-width: 80%;
+   margin: 0 auto;
+   padding: 100px 0 0;
+}
+
+.two-columns__brief {
+   color: #2F80ED;
+   width: 175px;
+   font-size: 18px;
+   line-height: 1.2em;
+   font-weight: 400;
+}
+
+.two-columns__main-tex {
+   max-width: 80%;
+   min-width: 784px;
+}
+
+.two-column__paragraph {
+   font-size: 24px;
+   line-height: 34px;
+}
+
+.two-column__paragraph:not(:last-child) {
+   margin: 0px 0px 30px 0px;
+}
+
+.two-column__span-accent {
+   font-weight: 600;
+}
+
+.digits {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 100px 0;
+}
+
+.section-title {
+   font-size: 60px;
+   line-height: 69px;
+}
+
+.section-subtitle {
+   font-size: 24px;
+   line-height: 34px;
+   margin: 20px 0px 0px 0px;
+}
+
+.table {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 1100px;
+   margin: 0 auto;
+}
+
+.table__cell {
+   width: 250px;
+   margin: 60px 0 0 0;
+   z-index: 10;
+}
+
+.table__heading {
+   font-size: 24px;
+   line-height: 1.15em;
+   margin: 0;
+}
+
+.table__text {
+   font-size: 18px;
+   line-height: 1.2em;
+   margin: 20px 0px 0px 0px;
+}
+
+.table__cell_theme_dark {
+   width: 200px;
+   color: white;
+   margin-right: 0;
+   margin-top: 80px;
+}
+
+.feinman {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: #F2F2F2;
+   height: 790px;
+   padding: 100px 0px 0px 0px;
+   position: relative;
+}
+
+.feinman__title {
+   width: 648px;
+   text-align: center;
+   font-size: 120px;
+   line-height: 1.15em;
+   margin: 0;
+   z-index: 10;
+}
+
+.feinman__subtitle {
+   font-size: 36px;
+   line-height: 51px;
+   margin: 70px 0px 0px 0px;
+   z-index: 10;
+}
+
+.feinman__link {
+   position: absolute;
+   right: 48px;
+   top: 50%;
+   font-size: 36px;
+   line-height: 51px;
+   color: #000;
+}
+
+.feinman__img {
+   width: 867px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+}
+
+.kaufman {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #1F1F1F;
+   position: relative;
+}
+
+.section-title_theme_dark {
+   color: #fff;
+   margin: 90px 0px 0px 0px;
+}
+
+.section-subtitle_theme_dark {
+   color: #fff;
+   margin: 20px 0px 0px 0px;
+}
+
+.table_theme_dark {
+   color: #fff;
+   z-index: 10;
+   padding: 0px 0px 90px 0px;
+}
+
+.table__cell_theme_dark {
+   margin: 80px 0px 0px 0px;
+}
+
+.table__heading_theme_dark {
+   color: #fff;
+}
+
+.table__text_theme_dark {
+   color: #fff;
+}
+
+.kaufman__triangle {
+   height: 877px;
+   position: absolute;
+   right: -210px;
+   top: 0;
+   z-index: 1;
+}
+
+.footer {
+   background-color: #1F1F1F;
+   color: #fff;
+}
+
+.footer__columns {
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+   margin: 0 auto;
+   padding: 60px 0 40px;
+}
+
+.footer__column_content_copyright {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: start;
+   flex-basis: 711px;
+   min-height: 350px;
+}
+
+.logo_place_footer {
+   height: 35px;
+}
+
+.footer__author {
+   margin: 18px 0px;
+   font-size: 18px;
+   line-height: 25px;
+}
+
+.footer__column_content_info {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__column-heading {
+   margin: 0px 0px 20px 0px;
+   font-size: 18px;
+   line-height: 30px;
+}
+
+.footer__column-link {
+   display: flex;
+   flex-direction: column;
+   font-size: 18px;
+   line-height: 30px;
+}
+
+.footer__column-link {
+   align-items: center;
+   flex-direction: row;
+   color: #fff;
+   margin: 0px 0px 16px 0px;
+}
+
+.footer__column_content_social {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__social-icons {
+   height: 16px;
+   width: 16px;
+   margin: 0px 10px 0px 0px;
+}
+
+
+/* YA2 */
+
+.technics {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80%;
+   margin: 0 auto;
+   padding: 100px 0 0;
+}
+
+.cards {
+   width: 920px;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+}
+
+.cards__item {
+   width: 240px;
+   padding: 60px 0 0;
+   margin: 0px 100px 0px 0px;
+}
+
+.cards__item:nth-child(3) {
+   margin: 0;
+}
+
+.cards__image {
+   width: 160px;
+   height: 160px;
+   border-radius: 50%;
+   margin: 0 40px;
+}
+
+.cards__title {}
+
+.cards__description {}
