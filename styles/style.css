@@ -150,6 +150,7 @@ section {
 .section-title {
    font-size: 60px;
    line-height: 69px;
+   /* line-height: 1.15px;  */
 }
 
 .section-subtitle {
@@ -383,6 +384,37 @@ section {
    margin: 0 40px;
 }
 
-.cards__title {}
+.cards__title {
+   font-size: 24px;
+   line-height: 34px;
+   margin: 43px 0px 0px 0px;
+}
 
-.cards__description {}
+.cards__description {
+   font-size: 18px;
+   line-height: 23px;
+   margin: 16px 0px 0px 0px;
+   text-align: center;
+}
+
+.video {
+   padding: 100px 0px 0px 0px;
+}
+
+
+/* .section-title {} */
+
+
+/* .section-subtitle {} */
+
+.video__iframes {
+   margin: 0 auto;
+   /* display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(2, 1fr); */
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.video__iframe {}
