@@ -18,7 +18,7 @@
 }
 
 .link:hover {
-   color: hsl(214, 100%, 50%);
+   color: #006eff;
 }
 
 .title {
@@ -87,15 +87,6 @@
    top: 0px;
    transform: rotate(-15deg);
    animation: spin 20s infinite linear;
-}
-
-@keyframes spin {
-   from {
-      transform: rotate(0deg);
-   }
-   to {
-      transform: rotate(360deg);
-   }
 }
 
 .description {
@@ -278,11 +269,13 @@
    right: -210px;
    top: 0;
    z-index: 1;
+   animation: spin 20s infinite linear;
 }
 
 .footer {
    background-color: #1F1F1F;
    color: #fff;
+   padding: 60px 0 40px;
 }
 
 .footer__columns {
@@ -290,7 +283,6 @@
    justify-content: space-between;
    width: 90%;
    margin: 0 auto;
-   padding: 60px 0 40px;
 }
 
 .footer__column_content_copyright {
@@ -323,18 +315,19 @@
    line-height: 30px;
 }
 
-.footer__column-link {
+.footer__column-links {
    display: flex;
    flex-direction: column;
    font-size: 18px;
    line-height: 30px;
+   margin: 0px 0px 16px 0px;
 }
 
 .footer__column-link {
    align-items: center;
    flex-direction: row;
    color: #fff;
-   margin: 0px 0px 16px 0px;
+   margin: 0px 0px 6px 0px;
 }
 
 .footer__column_content_social {
@@ -483,4 +476,31 @@
 .khan__buy-link {
    font-size: 24px;
    line-height: 1.15em;
+}
+
+.resources {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   padding: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+   display: flex;
+   justify-content: center;
+   padding: 80px 0px 0px 0px;
+}
+
+.resources__logo {
+   width: 270px;
+   height: 38px;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
 }
