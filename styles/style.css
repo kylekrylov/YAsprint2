@@ -19,6 +19,7 @@
 
 .link:hover {
    color: #006eff;
+   opacity: 0.5;
 }
 
 .title {
